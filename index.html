@@ -630,61 +630,65 @@
         </div>
       </div>
     </footer>
-   <!-- /.modal-->
-    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+   <!-- /.Modal-Registration->
+       <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Registration</h4>
             </div>
-            <div class="modal-body">
-            <div class="container">
-      <div class="row main">
-        <div class="panel-heading">
+           <div class="modal-body">
+           <div class="row main">
+           <div class="panel-heading">
                  <div class="panel-title text-center">
                     <h3 class="title">Please Enter your details</h3>
                     <hr/>
                   </div>
-              </div> 
+                  </div>
+              
 
         <div class="main-login main-center">
-        <form class="form-horizontal" method="post" action="#">
+        <form class="form-horizontal" role="form" method="post" action="#">
             
             <div class="form-group">
-              <label for="name"">Name</label>
-             
+            <label  class="col-sm-2 control-label"
+              for="name"">Name</label>
+             <div class="col-sm-9">
                 <div class="input-group">
+
                   <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="name" id="name"  placeholder="Your Full Name"/>
                 </div>
               </div>
-            
+            </div>
 
             <div class="form-group">
-              <label for="email">Email</label>
-              
+              <label class="col-sm-2 control-label" for="email">Email</label>
+              <div class="col-sm-9">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="email" id="email"  placeholder="Your Email"/>
                 </div>
               </div>
-           
+           </div>
 
             <div class="form-group">
-              <label for="mobile">Mobile</label>
+              <label  class="col-sm-2 control-label" for="mobile">Mobile</label>
+              <div class="col-sm-9">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-mobile aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile"/>
                 </div>
               </div>
-          
+          </div>
 
             <div class="form-group">
-              <label for="nationality">Branch</label>
+              <label class="col-sm-2 control-label" for="branch">Branch</label>
+              <div class="col-sm-9">
     
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-book" aria-hidden="true"></i></span>
                   <select class="form-control" name="Branch" id="branch"  placeholder="Please select your Course">
                                     <option>-select-</option>
                                     <option>IT</option>
@@ -698,13 +702,28 @@
                                     </select>
                 </div>
               </div>
-            
+            </div>
             
             <div class="form-group">
-              <label for="country" >Year</label>
+              <label class="col-sm-2 control-label" for="country">Section</label>
+            <div class="col-sm-9">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span>
-                  <select class="form-control" name="portfolio" id="portfolio"  placeholder="Please select your Portfolio">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></span>
+                  <select class="form-control" name="section" id="section"  placeholder="Section">
+                                    <option>-Select-</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    </select>
+                </div>
+               </div>
+               </div> 
+             
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="Year" >Year</label>
+              <div class="col-sm-9">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></span>
+                  <select class="form-control" name="year" id="year"  placeholder="Please select your Year">
                                     <option>-Select-</option>
                                     <option>1st Year</option>
                                     <option>2nd Year</option>
@@ -713,27 +732,30 @@
                                     </select>
                 </div>
               </div>
+          </div>
           
-
+           
             <div class="form-group">
-              <label for="country">Section</label>
-            
+            <label class="col-sm-2 control-label" for="portfolio">Portfolio</label>
+            <div class="col-sm-9">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span>
-                  <select class="form-control" name="portfolio" id="portfolio"  placeholder="Please select your Portfolio">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pawn" aria-hidden="true"></i></span>
+                  <select class="form-control" name="portfolio" id="portfolio"  placeholder="Portfolio">
                                     <option>-Select-</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                         </select>
+                                    <option>Technical Team</option>
+                                    <option>Recruitment Team</option>
+                                    </select>
                 </div>
-              </div>
-                                
-            <div class="form-group ">
-              <button type="button" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
+               </div>
+               </div>       
+           
+              <button type="submit" class="btn btn-primary btn-lg btn-block login-button" >Submit</button>
+             </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </button>
             </div>
-          </form>
         </div>
-      </div>
     </div>
 
    
